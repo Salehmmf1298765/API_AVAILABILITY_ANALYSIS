@@ -2,7 +2,7 @@
 
 ## 1) Summary (Available / Not Available)
 
-### Available in Odoo (no business customization)
+### Available in Odoo (no customization)
 
 - Authentication (session-based) and portal customer access.
 - Customer profile and addresses (`res.partner` + child addresses).
@@ -29,7 +29,7 @@
   - `product.template`: `tigro_reference_number`.
   - `sale.order`: `sales_channel`.
 
-### Not available (requires new business customization in addition to the API layer)
+### Not available (requires new customization in addition to the API layer)
 
 - Guest login concept (dedicated guest session/account endpoint).
 - Refresh token flow (if required by the mobile contract).
@@ -102,9 +102,6 @@
 - Access control and record rules are enforced per endpoint.
 - External logistics/live tracking integration is treated as a separate dependency impacting Phase 2.
 
-### Benchmark reference (web)
-
-- A common rule-of-thumb for a *first* Odoo integration (including learning curve) is **~20-40 hours**, and subsequent similar integrations tend to be faster once patterns are established.
 
 ## 4) Endpoint matrix
 
